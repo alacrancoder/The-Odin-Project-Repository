@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Add7
+        function add7_1(number) {
+            return number + 7
+        }
+
+        let add7_2 = function(number) {
+            return number + 7
+        };
+
+        let add7_3 = (number) => number + 7;
+
+        console.log(add7_1(1))
+        console.log(add7_2(2))
+        console.log(add7_3(3))
+
+        // multiply
+        function multiply(number1, number2) {
+            return number1 * number2
+        }
+
+        let multiply2 = function(num1, num2) {
+            return num1 * num2;
+        };
+
+        let multiply3 = (num1, num2) => num1 * num2;
+
+        console.log(multiply(3,5))
+        console.log(multiply2(3,5))
+        console.log(multiply3(3,5))
+
+        // capitalize
+        function capitalize(string) {
+            let upper = string.substring(0,1).toUpperCase()
+            let lower = string.substring(1).toLowerCase()
+            return upper + lower
+        }
+
+        console.log(capitalize("lA locomoTOra de mi AMa"))
+
+        let capitalize2 = string => string.substring(0,1).toUpperCase() + string.substring(1).toLowerCase()
+
+        console.log(capitalize2("soCrates Es un VIejO AMARgado"))
+
+        // lastletter
+        let lastletter = string => string.substring(string.length - 1)
+
+        console.log(lastletter("abcd"))
+
+    </script>
+</body>
+</html>
